@@ -1,0 +1,48 @@
+/* flex box are build for 1 dimentional layout */
+
+.flexbox-header {
+  display: flex;
+}
+
+/* only the third child is made margin-left auto  */
+.flexbox-header > div:nth-child(3) {
+  margin-left: auto;
+}
+
+/* grid page is build for 2 dimensional layout */
+/* in grid page the placement of the item are made on the basis of column layouts */
+.grid-page {
+    grid-gap: 2px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px 200px 40px;
+}
+
+.header {
+    display: flex;
+  grid-column: 1/-1;;
+}
+
+.header > div:nth-child(3){
+    margin-left: auto;
+}
+
+.menu {
+  grid-column: 1/2;
+}
+.content {
+  grid-column: 2/-1;
+}
+.footer {
+  grid-column: 1/-1;
+}
+
+div {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+
+
+
+ 

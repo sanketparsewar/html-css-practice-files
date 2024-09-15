@@ -1,0 +1,19 @@
+.container{
+    height: 300px;
+    text-align: center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(2,100px);
+    /* this is used to align all the items inside the container to start center or end */
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    /* this is used to push the content down lower to center. align center is use to adjust postion along the column start center and end */
+    /* align-content: end; */
+}
+
+div{
+    margin: 2px;
+    border: 1px solid black;
+}
+

@@ -1,0 +1,21 @@
+.container {
+  text-align: center;
+  display: grid;
+  /* this helps to maintain the number of box in container as size incerase or decrease */
+  /* grid-template-columns: repeat(auto-fit, 100px); */
+  /* grid-template-rows: repeat(2,100px); */
+  /* grid-gap: 2px; */
+
+  /* using this it  is made responsive with size of moile and pc */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  /* using tis the rows below the two rows is not same as above so weneed to fix this and we cannot use this */
+  /* grid-template-rows: repeat(2, 100px); */
+
+  /* we have to use the implicitly assigned row size */
+  grid-auto-rows: 100px;
+}
+
+div {
+  border: 1px solid black;
+  margin: 5px;
+}
