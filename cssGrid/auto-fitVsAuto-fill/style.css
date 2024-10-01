@@ -1,0 +1,21 @@
+.container1{
+    margin: 5px;
+    border: 1px solid red;
+    display: grid;
+    /* auto-fit occupies the space and increase size of items to fit in a row */
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+grid-template-rows: 100px 100px;
+}
+
+.container2{
+    margin: 5px;
+    border: 1px solid green;
+    display: grid;
+    /* auto-fill do not increase the size of items more than 100px if the window is stretched it leaves the space empty to right side */
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+    grid-template-rows: 100px 100px;
+}
+
+div{
+    border: 1px solid black;
+}

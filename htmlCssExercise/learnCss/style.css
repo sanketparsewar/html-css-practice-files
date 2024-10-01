@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Blackthorne;
+    src: url("Blackthorne.ttf");
+}
+@font-face {
+    font-family: BlackRockie;
+    src: url("BlackRockie.ttf");
+}
+
+body{
+
+    text-align: center;
+    /* margin: 0; */
+    border-collapse: collapse;
+    border-spacing: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-variant:small-caps;
+    word-spacing: 1px;
+    quotes: inherit;
+}
+
+.labcontainer{
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items:center;
+    width: 300px;
+    height: 200px;
+}
+
+.labitem{
+    margin: 10px;
+    border: 2px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.netflix{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    background-color: red;
+    width: 200px;
+    height: 65px;
+    padding: 10px 10px;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.right{
+    text-shadow: 5px 3px 5px black;
+}
+.left{
+    text-shadow: -5px 3px 4px black;
+}
+
+.ad{
+    font-family:monospace;
+    font-family: "Matemasie", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  border: 5px solid rgb(121, 204, 113);
+  background-color: rgb(95, 124, 51);
+  color: white;
+  width: 500px;
+  margin: 10px auto;
+}
+.click{
+    border-radius: 10px;
+    padding: 0 0;
+    color:rgb(214, 183, 44);
+}
+
+.japan-flag{margin-top: 20px;
+    border: 1px solid rgb(134, 134, 134);
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.circle{
+    border-radius: 50px;
+    margin: 30px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.item{
+    text-align: center;
+    margin: 10px 0px;
+    border: 1px solid rgb(95, 94, 94);
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight:600;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.news h1{
+    font-family: Blackthorne;
+    font-size: 50px;
+}
+.following{
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(71, 70, 70);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 20px;
+    background: none;
+}
+.following:hover{
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 20px;
+    background: rgb(154, 163, 245);
+    cursor: pointer;
+}
+
+.card{
+    font-family: BlackRockie;
+    color: #222222;
+    background-color: lightgrey;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border: 2px solid green;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+
+}
+
+
+.red{
+    background:rgb(255, 0, 0);
+    height: 100px;
+}
+.yellow{
+    background:rgb(236, 233, 48);
+    height: 100px;
+    margin: 10px 0;
+}
+.green{
+    background:rgb(94, 179, 73);
+    height: 100px;
+}
