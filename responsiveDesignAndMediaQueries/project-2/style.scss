@@ -1,0 +1,163 @@
+
+
+* {
+  margin: 0px 5px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  body {
+    font-family: sans-serif;
+  }
+}
+
+
+#size{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+ transform: translateX(-50%);
+ font-size: 35px;
+ color: red;
+}
+
+
+.container{
+  // this is use to set height max to window size
+  // vh means viweport height
+height:100vh;
+}
+
+
+.header{
+
+  height: 10%;
+  // border: 2px solid red;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+
+// here the &__logo is equivalent to .header__logo{}
+  &__logo{
+    font-size: 4vw;
+  }
+  &__menu{
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5vw;
+    gap: 15px;
+  }  
+}
+
+.main{
+  height: 80%;
+  // border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  &__image{
+    background-image: url(./images/profile.jpg);
+    width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: left center;
+
+    // border: 2px solid green;
+    
+  }
+
+  &__text{
+    width: 50%;
+    // border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    // this is targeting hello text
+    &-1{
+      // vw means viweport width
+      font-size: 10vw;
+    }
+    // targeting multiple classes simultaniously
+    &-2,&-3,&-4{
+      font-size: 5vw;
+    }
+  }
+}
+
+
+.footer{
+
+  height: 10%;
+  // border: 2px solid green;
+  display: flex ;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-right: 10%;
+  // this will target all the classes in footer that has the img inside it
+  [class ^="footer__"]{
+    img{
+      width: 5.3vw;
+    }
+  }
+}
+
+
+// here we are creating the media query for the mobile version
+@media (max-width:650px){
+  .header{
+justify-content: center;
+    &__logo{font-size: 40px;}
+
+    &__menu{
+
+      display: none;
+    }
+  }
+
+
+  .main{
+flex-direction: column;
+justify-content: center;
+align-items: center;
+&__image{
+      border-radius: 100%;
+      width: 200px;
+      height: 200px; 
+      background-size: 100%;
+      background-position: center ;
+    }
+    &__text{
+      width: 100%;
+      &-1{
+        display: none;
+      }
+      &-2,&-3,&-4{
+        font-size: 30px;
+      }
+    }
+  }
+
+
+  .footer{
+justify-content: center;
+margin: 0px;
+    [class ^="footer__"]{
+      img{
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+

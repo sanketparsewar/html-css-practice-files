@@ -1,0 +1,102 @@
+// here we are using the color and and they are referencing to the variables
+
+$color-1: #cdb4db; //mobile
+$color-2:#fff1e6;//tablet
+$color-3:#52b788;//laptop
+$color-4:#bee1e6;//desktop
+
+// defining the break point for different device size
+$mobile:576px;
+$tablet:768px;
+$laptop:992px;
+$desktop:1200px;
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  body {
+    font-family: sans-serif;
+    font-size: 35px;
+  }
+}
+
+
+.container{
+  // border: 4px solid red;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241, 232, 232);
+  
+}
+
+#size{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+ transform: translateX(-50%);
+ font-size: 35px;
+ color: red;
+}
+
+// conditions are seperated by the comma',' and 'and'
+// screen is media type
+// max-width sets the style inside the set boundries
+// means the color is applied if window size is between 500px
+// inside the media query we have to mention that to which class we are applying the property
+// declaring size means writting directly
+
+// @media screen and (max-width: 500px){
+//   .container{
+//     background-color: $color-1 ;
+//   }
+// }
+
+
+// min-width sets the style outside of the set boundries
+// means the color is applied if the window size is greater than the set size
+// inside the media query we have to mention that to which class we are applying the property
+
+// @media screen and (min-width:700px){
+//   .container{
+//     background-color: $color-3;
+//   }
+// }
+
+
+// here we have the size in mobile variable and we are directly using it
+// here we have to use the desktop first approach 
+// largest should be at first and the minimum should be at the bottom
+
+@media (max-width:$desktop){
+  .container{
+    background-color: $color-4;
+  }
+}
+@media (max-width:$laptop){
+.container{
+  background-color: $color-3;
+  }
+}
+
+@media (max-width:$tablet){
+  .container{
+    background-color: $color-2;
+  }
+}
+@media (max-width:$mobile){
+  .container{
+    background-color: $color-1;
+  }
+}
+
+
+
+
+
+
+
